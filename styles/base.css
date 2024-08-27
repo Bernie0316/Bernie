@@ -16,8 +16,8 @@ header {
     grid-template-columns: 1fr 1fr;
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(10px) brightness(0.8);
-    -webkit-backdrop-filter: blur(10px) brightness(0.8);
+    backdrop-filter: blur(10px) brightness(1);
+    -webkit-backdrop-filter: blur(10px) brightness(1); /*解決兼容性問題*/
 }
 #leftPlace {
     text-align: left;
