@@ -19,10 +19,14 @@ header {
     backdrop-filter: blur(10px) brightness(1.2);
     -webkit-backdrop-filter: blur(10px) brightness(1.2); /*解決兼容性問題*/
 }
-#leftPlace {
-    text-align: left;
-}
 
 main {
     margin-top: 100px;
+}
+#mypic {
+    max-width: 500px;
+}
+#intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
