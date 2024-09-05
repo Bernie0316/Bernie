@@ -1,0 +1,12 @@
+@media (max-width: 37.5em) {
+    #intro {
+        display: inline;
+    }
+}
+
+@media (min-width: 37.5em) {
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }    
+}
