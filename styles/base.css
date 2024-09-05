@@ -19,6 +19,9 @@ header {
     backdrop-filter: blur(10px) brightness(1.2);
     -webkit-backdrop-filter: blur(10px) brightness(1.2); /*解決兼容性問題*/
 }
+header a {
+    color: #f0f8ff;
+}
 
 main {
     margin-top: 100px;
@@ -33,3 +36,6 @@ main {
     grid-template-columns: 1fr 1fr;
 }
 
+#webEnd {
+    display: inline;
+}
