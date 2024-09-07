@@ -17,7 +17,7 @@ body {
 header {
     display: grid;
     position: fixed;
-    z-index: 100;
+    z-index: 10;
     top: 0;
     left: 0;
     right: 0;
@@ -77,9 +77,6 @@ footer a {
 }
 
 #webEnd {
-    margin-top: 50px;
+    margin-top: 500px;
     display: inline;
-}
-* {
-    border: #f0f8ff 1px solid;
 }

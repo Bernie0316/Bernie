@@ -1,4 +1,59 @@
 @media (max-width: 37.5em) {
+    #leftHeader {
+        position: relative;
+        z-index: 10; /* z-index 設低一點，讓 navbar 可以覆蓋它 */
+    }
+    #menu {
+        position: absolute;
+        right: 50px;
+        background: none;
+        z-index: 30;
+    }
+    .hamToggle {
+        position: absolute;
+        width: 1.8rem;
+        height: 1.3rem;
+        top: 2rem;
+        right: 3rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .hamToggle span{
+        height: 3px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #f0f8ff;
+    }
+    /* #menu::before {
+        content: "🎲";
+    }
+    #menu.open::before {
+        content: "❌";
+    } */
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #101720;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+        z-index: 20;
+    }
+    .navbar.open {
+        transform: translateY(0);
+    }
+    nav a {
+        margin-left: 0 auto;
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
+
     #intro {
         display: inline;
     }
@@ -8,5 +63,8 @@
     footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+    #menu {
+        display: none;
     }    
 }

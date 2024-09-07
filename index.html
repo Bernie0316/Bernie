@@ -13,11 +13,17 @@
 <body>
     <header>
         <a id="leftHeader" href="index.html">Bernie Zhong</a>
-        <nav id="rightHeader">
-            <a>TimeLine</a>
-            <a>Projects</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div id="rightHeader">
+            <div id="menu" class="hamToggle">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+            </div>
+            <nav class="navbar">
+                <a>TimeLine</a>
+                <a>Projects</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="intro">
@@ -59,11 +65,13 @@
                 </a>
             </div>
         </div>
+        <hr>
         <div id="webEnd">
             &copy;<span id="year"></span> | Bernie Zhong | Taiwan 
             <p id="lastModified"></p>
         </div>
     </footer>
     <script src="scripts/modified.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 </html>
