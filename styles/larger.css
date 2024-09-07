@@ -3,34 +3,36 @@
         position: relative;
         z-index: 10; /* z-index 設低一點，讓 navbar 可以覆蓋它 */
     }
-    #menu {
-        position: absolute;
-        right: 50px;
-        background: none;
-        z-index: 30;
+    #rightHeader {
+        position: relative;
     }
+    /* for the bar open/close nutton */
     .hamToggle {
         position: absolute;
-        width: 1.8rem;
-        height: 1.3rem;
-        top: 2rem;
-        right: 3rem;
-        display: none;
+        width: 1.5rem;
+        height: 1rem;
+        top: 5px;
+        right: 5px;
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: flex-end;
+        z-index: 30;
     }
     .hamToggle span{
-        height: 3px;
+        height: 2px;
         width: 100%;
         border-radius: 10px;
         background-color: #f0f8ff;
+        transition: all 0.3s ease;
     }
-    /* #menu::before {
-        content: "🎲";
+    .hamToggle.open .bar1 {
+        transform: rotate(45deg) translate(5px, 5px);
     }
-    #menu.open::before {
-        content: "❌";
-    } */
+    .hamToggle.open .bar2 {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    /* for the bar open/close nutton end */
     .navbar {
         display: flex;
         flex-direction: column;
