@@ -1,3 +1,12 @@
+/* Resets section */
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+h2 {
+    margin: 0;
+}
+/* Resets section end */
 body {
     color: #f0f8ff;
     background-color: #101720;
@@ -19,12 +28,22 @@ header {
     backdrop-filter: blur(10px) brightness(1.2);
     -webkit-backdrop-filter: blur(10px) brightness(1.2); /*解決兼容性問題*/
 }
-header a {
-    color: #f0f8ff;
-    text-decoration: none;
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    padding: 5px;
 }
 #leftHeader {
     font-size: 1.5em;
+}
+#rightHeader {
+    margin-right: 30px;
+}
+a {
+    color: #f0f8ff;
+    text-decoration: none;
 }
 
 main {
@@ -41,12 +60,26 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+#intro p {
+    padding: 0 50px 0 50px;
+    text-align: left; 
+}
 
 hr {
     margin-left: 20px;
     margin-right: 20px;
 }
+footer a {
+    font-weight: bold;
+    font-size: 1.7em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 #webEnd {
+    margin-top: 50px;
     display: inline;
+}
+* {
+    border: #f0f8ff 1px solid;
 }
