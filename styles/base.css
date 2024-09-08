@@ -21,7 +21,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
+    width: 100% auto;
     grid-template-columns: 1fr 1fr;
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.7);
@@ -37,16 +37,14 @@ nav a {
 }
 #leftHeader {
     font-size: 1.5em;
-}
-#rightHeader {
-    margin-right: 30px;
+    text-align: left;
 }
 a {
     color: #f0f8ff;
     text-decoration: none;
 }
 
-main {
+main, footer {
     margin-top: 100px;
     margin-left: 40px;
     margin-right: 40px;
@@ -66,8 +64,13 @@ main {
 }
 
 hr {
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 95%;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+}
+
+footer {
+    text-align: left;
 }
 footer a {
     font-weight: bold;
@@ -75,8 +78,7 @@ footer a {
     padding-left: 5px;
     padding-right: 5px;
 }
-
 #webEnd {
-    margin-top: 500px;
     display: inline;
+    text-align: center;
 }
