@@ -51,8 +51,9 @@ main, footer {
 }
 #mypic {
     width: 100%;
-    max-width: 500px;
-    display: none; /*暫時不公開XD*/
+    max-width: 450px;
+    border-radius: 2.5%;
+    /* display: none; */
 }
 #intro {
     display: grid;

@@ -50,7 +50,8 @@
         transform: translateY(0);
     }
     nav a {
-        margin-left: 0 auto;
+        text-align: left;
+        margin-left: 5%;
     }
     .no-scroll {
         overflow: hidden;
