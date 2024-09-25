@@ -55,13 +55,8 @@ main, footer {
     border-radius: 2.5%;
     /* display: none; */
 }
-#intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 #intro p {
     padding: 0 50px 0 50px;
-    text-align: left; 
 }
 
 hr {
