@@ -56,6 +56,18 @@
     .no-scroll {
         overflow: hidden;
     }
+    #dmbLarge {
+        display: none;
+    }
+    #dmbSmall {
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        top: 1px;
+        right: 50px;
+
+        z-index: 30;
+    }
 
     #intro {
         display: inline;
@@ -63,6 +75,9 @@
 }
 
 @media (min-width: 37.5em) {
+    #dmbSmall {
+        display: none;
+    }
     footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
