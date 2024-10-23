@@ -83,10 +83,25 @@
     
     #hPage {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(10, 1fr);
     }
     #intro, #aboutMe {
+        grid-column: 1/11;
+    }
+    #timeLine {
         grid-column: 1/4;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #projects {
+        grid-column: 4/8;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #contact {
+        grid-column: 8/11;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     footer {
