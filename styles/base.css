@@ -40,21 +40,24 @@ nav a {
     text-align: left;
 }
 a {
-    color: #f0f8ff;
+    /* color: #f0f8ff; */
+    color: rgb(200, 208, 215);
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 header a:hover, footer a:hover {
     color: white;
+    transition: color 0.3s ease;
 }
 
-main, footer {
+main {
     margin-top: 100px;
     margin-left: 20px;
     margin-right: 20px;
 }
 #mypic {
     width: 100%;
-    max-width: 450px;
+    max-width: 350px;
     border-radius: 2.5%;
     /* display: none; */
 }
@@ -81,6 +84,8 @@ hr {
 
 footer {
     text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #webEnd {

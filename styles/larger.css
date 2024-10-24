@@ -1,3 +1,4 @@
+/* small */
 @media (max-width: 37.5em) {
     #leftHeader {
         position: relative;
@@ -73,6 +74,7 @@
     }
 }
 
+/* large */
 @media (min-width: 37.5em) {
     #dmbSmall {
         display: none;
@@ -85,8 +87,13 @@
         display: grid;
         grid-template-columns: repeat(10, 1fr);
     }
-    #intro, #aboutMe {
-        grid-column: 1/11;
+    #intro {
+        grid-column: 1/6;
+        padding: 50px 0 50px 50px;
+    } 
+    #aboutMe {
+        grid-column: 6/11;
+        padding: 50px 50px 0 50px;
     }
     #timeLine {
         grid-column: 1/4;
