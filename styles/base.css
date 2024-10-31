@@ -6,6 +6,11 @@
 h2 {
     margin: 0;
 }
+button {
+    background: transparent;
+    border: none;
+    color: inherit;
+}
 /* Resets section end */
 body {
     color: #f0f8ff;
@@ -40,14 +45,13 @@ nav a {
     text-align: left;
 }
 a {
-    /* color: #f0f8ff; */
     color: rgb(200, 208, 215);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 header a:hover, footer a:hover {
     color: white;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 
 #intro {
@@ -72,17 +76,25 @@ header a:hover, footer a:hover {
 .tab {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background-color: gray;
+    background-color: rgba(100, 100, 100, 0.3);
     border-radius: 30px;
-    padding: 0 5px 0 5px;
+    padding: 10px;
     max-width: 450px;
 }
+.sectionSwitchs.active {
+    background-color: #f0f8ff;
+    color: #101720;
+    border-radius: 13px;
+    transition: color 0.5s ease;
+}
+
 .mainSection {
     background-color: rgba(100, 100, 100, 0.3);
     border-radius: 10px;
     width: 90%;
     margin-top: 50px;
 }
+
 .social a {
     font-weight: bold;
     font-size: 1.7em;
