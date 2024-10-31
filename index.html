@@ -28,34 +28,40 @@
             <button id="dmbSmall"></button>
         </section>
     </header>
+    <section id="intro">
+        <img id="mypic" src="images/mypic.jpg" alt="mypic">
+        <div id="introText">
+            <h1>Bernie <br>Zhong</h1>
+            <P>
+                I am a dedicated student with growing skills in front-end development and a deepening understanding of backend technologies. 
+                <br>
+                I recently completed a certificate from BYU-Idaho, 
+                which has been a key milestone in my educational journey. 
+                <br>
+                I am eager to continue expanding my skills and contributing to innovative projects.
+            </P>
+        </div>
+    </section>
     <main id="hPage">
-        <section id="intro">
-            <img id="mypic" src="images/mypic.jpg" alt="mypic">
+        <div class="tab">
+            <button class="sectionSwitchs" onclick="openSection(event, 'aboutMe')">About Me</button>
+            <button class="sectionSwitchs" onclick="openSection(event, 'timeLine')">Time Line</button>
+            <button class="sectionSwitchs" onclick="openSection(event, 'projects')">Projects</button>
+            <button class="sectionSwitchs" onclick="openSection(event, 'contact')">Contact Me</button>
+        </div>
+        <section id="aboutMe" class="mainSection">
+            <h3>About Me</h3>
+            <div></div>
         </section>
-        <section id="aboutMe">
-            <div class="introText">
-                <h1>Bernie <br>Zhong</h1>
-            </div>
-            <div>
-                <P>
-                    I am a dedicated student with growing skills in front-end development and a deepening understanding of backend technologies. 
-                    <br>
-                    I recently completed a certificate from BYU-Idaho, 
-                    which has been a key milestone in my educational journey. 
-                    <br>
-                    I am eager to continue expanding my skills and contributing to innovative projects.
-                </P>
-            </div>
-        </section>
-        <section id="timeLine" class="mainSecion">
+        <section id="timeLine" class="mainSection">
             <h3>Time Line</h3>
             <div></div>
         </section>
-        <section id="projects" class="mainSecion">
+        <section id="projects" class="mainSection">
             <h3>Projects</h3>
             <div></div>
         </section>
-        <section id="contact" class="mainSecion">
+        <section id="contact" class="mainSection">
             <h3>Contact Me</h3>
             <div>
                 <h3>Phone</h3>
@@ -108,5 +114,6 @@
     <script src="scripts/modified.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/homeSwitchB.js"></script>
 </body>
 </html>

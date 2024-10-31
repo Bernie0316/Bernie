@@ -82,34 +82,15 @@
     #menu {
         display: none;
     } 
-    
-    #hPage {
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-    }
+
     #intro {
-        grid-column: 1/6;
-        padding: 50px 0 50px 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: gray;
+        padding: 50px;
+        border-radius: 20px;
+        margin: 100px 50px 0 50px;
     } 
-    #aboutMe {
-        grid-column: 6/11;
-        padding: 50px 50px 0 50px;
-    }
-    #timeLine {
-        grid-column: 1/4;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    #projects {
-        grid-column: 4/8;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    #contact {
-        grid-column: 8/11;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
 
     footer {
         display: grid;
