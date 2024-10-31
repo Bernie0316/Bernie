@@ -43,25 +43,25 @@
         </div>
     </section>
     <main id="hPage">
-        <div id="sectionSwitch">
-            <h3>About Me</h3>
-            <h3>Time Line</h3>
-            <h3>Projects</h3>
-            <h3>Contact Me</h3>
+        <div class="tab">
+            <button class="sectionSwitchs" onclick="openSection(event, 'aboutMe')">About Me</button>
+            <button class="sectionSwitchs" onclick="openSection(event, 'timeLine')">Time Line</button>
+            <button class="sectionSwitchs" onclick="openSection(event, 'projects')">Projects</button>
+            <button class="sectionSwitchs" onclick="openSection(event, 'contact')">Contact Me</button>
         </div>
-        <section id="aboutMe" class="mainSecion">
+        <section id="aboutMe" class="mainSection">
             <h3>About Me</h3>
             <div></div>
         </section>
-        <section id="timeLine" class="mainSecion">
+        <section id="timeLine" class="mainSection">
             <h3>Time Line</h3>
             <div></div>
         </section>
-        <section id="projects" class="mainSecion">
+        <section id="projects" class="mainSection">
             <h3>Projects</h3>
             <div></div>
         </section>
-        <section id="contact" class="mainSecion">
+        <section id="contact" class="mainSection">
             <h3>Contact Me</h3>
             <div>
                 <h3>Phone</h3>
@@ -114,5 +114,6 @@
     <script src="scripts/modified.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/homeSwitchB.js"></script>
 </body>
 </html>
