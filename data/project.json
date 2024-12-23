@@ -1,24 +1,10 @@
 {
     "projects": [
         {
-            "year": "2020",
-            "milestones": [
-                {
-                    "title": "name of things Dwon",
-                    "img": "image",
-                    "url": "url"
-                },
-                {
-                    "title": "certificate(get)",
-                    "img": "certificate img",
-                    "url": "certificate url"
-                },
-                {
-                    "title": "project(finished)",
-                    "img": "project image",
-                    "url": "project url"
-                }
-            ]
+            "title": "Rafting",
+            "img": "image",
+            "url": "bernie0316.github.io/wdd130/wwr/index.html",
+            "year": "2023"
         }
     ]
 }
