@@ -11,24 +11,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
 </head>
 <body id="content">
-    <header>
-        <a id="leftHeader" href="index.html">Bernie Zhong</a>
-        <section id="rightHeader">
-            <div id="menu" class="hamToggle">
-                <span class="bar1"></span>
-                <span class="bar2"></span>
-            </div>
-            <nav class="navbar">
-                <a href="/subpages/aboutme.html">AboutMe</a>
-                <a href="/subpages/projects.html">Projects</a>
-                <a href="/subpages/contact.html">Contact</a>
-                <a href="/subpages/sitePlan/sitePlan.html">SitePlan</a>
-                <!-- <div id="darkmode" class="dmToggle"></div> -->
-                <button id="dmbLarge" class="mode"></button>
-            </nav>
-            <button id="dmbSmall" class="mode"></button>
-        </section>
-    </header>
+    <div id="header"></div>
     <section id="intro">
         <img id="mypic" src="images/mypic.jpg" alt="mypic">
         <div id="introText">
@@ -89,15 +72,14 @@
         </section>
     </main>
     <hr>
-    <footer>
-        <div id="webEnd">
-            &copy;<span id="year"></span> | Bernie Zhong | Taiwan 
-            <p id="lastModified"></p>
-        </div>
-    </footer>
+    <div id="footer"></div>
     <script src="scripts/modified.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/homeSwitchB.js"></script>
+    <script type="module">
+        import { loadComponents } from './scripts/partial.js';
+        loadComponents();
+    </script>
 </body>
 </html>
