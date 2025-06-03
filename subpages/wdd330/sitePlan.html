@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Site Plan</title>
+  <link type="text/css" rel="stylesheet" href="styles/siteplan.css" />
+</head>
+
+<body>
+  <header>
+    <h1>ParkHere Site Plan</h1>
+    <h2>Bernie Zhong</h2>
+  </header>
+  <main>
+    <hr>
+    <h2>Overview</h2>
+    <h3>Purpose</h3>
+    <p>這個專案的目的是解決在都市中找停車位困難的問題，特別是台灣的大城市如台北和高雄。許多駕駛人浪費大量時間在找車位上，這不僅增加交通壅塞，也造成碳排放增加。我的動機是自己開車時經常遇到這個問題，希望透過這個應用程式，幫助使用者快速找到附近有空位的停車場，提升生活便利性與效率。</p>
+
+    <h3>Target Audience</h3>
+    <p>
+      駕駛族群，特別是常在都市內開車的人
+      台灣主要城市（如台北市、高雄市）的居民或訪客
+      需要臨時找停車場的外地旅客
+      外送員、物流人員等需要快速停車的工作者
+    </p>
+
+    <h3>Major Functions</h3>
+    <p>
+      即時位置定位：使用者開啟應用後自動取得目前所在位置，作為搜尋停車場的中心點。
+      搜尋附近停車場：根據使用者位置或輸入地址，列出周圍的停車場資訊。
+      顯示剩餘車位數量：即時顯示每個停車場的可用車位（如小客車、大客車、機車）。
+      地圖標示與導航：整合地圖服務，在地圖上顯示停車場位置，並提供導航連結至 Google Maps 或 Apple Maps。
+      篩選功能：使用者可依類型（室內/室外）、價格、車種（機車/汽車）等條件進行篩選。
+      詳細資訊頁面：顯示停車場地址、開放時間、費率資訊、車位類型、是否可預約等。
+      收藏功能：允許使用者將常用的停車場加入收藏列表，方便快速查找。
+      更新時間提示：顯示資料的最後更新時間，讓使用者知道資料的即時性與可靠度。
+    </p>
+
+    <h3>External Data</h3>
+    <a><p>https://data.taipei</p></a>
+    <a href=""><p>https://data.kcg.gov.tw/</p></a>
+    <p>
+      使用的 API 與資料包括：
+
+      台北市即時停車資訊（開放資料）
+      　來源：資料台北（https://data.taipei/）
+      　用途：查詢即時剩餘車位數、停車場地點與基本資訊。
+      高雄市智慧停車 API
+      　來源：高雄市政府資料開放平台（https://data.kcg.gov.tw/）
+      　用途：提供高雄市停車場即時車位與詳細資訊。
+      未來如擴充可加入：
+
+      Google Maps API：地圖與導航功能（不計入兩個主要 API 之內）
+      需儲存的資料：
+
+      使用者收藏清單（本地儲存即可）
+      最近搜尋紀錄（可選擇性儲存）
+    </p>
+
+    <h3>Module List</h3>
+    <p>
+      地圖顯示模組：整合地圖 API，顯示停車場位置。
+      搜尋模組：搜尋附近或特定地址的停車場。
+      API 資料處理模組：接收並整理台北/高雄開放資料。
+      列表與詳細頁模組：展示搜尋結果與詳細停車場資訊。
+      篩選器模組：提供條件篩選（車種、價格等）。
+      收藏管理模組：增刪使用者收藏的停車場。
+      導航連結模組：整合第三方導航（如 Google Maps）。
+      狀態顯示模組：顯示資料更新時間與錯誤訊息。
+    </p>
+
+    <h3>Timeline</h3>
+    <p>
+      Week 5	完成畫面 Wireframes、API 串接測試、確定設計風格
+      Week 6	完成主要功能開發（搜尋、地圖、列表、詳細頁）、介面初步設計完成
+      Week 7	完成收藏、導航、篩選等功能、進行測試與除錯、提交最終作品
+    </p>
+
+    <hr>
+    <h2>Branding</h2>
+    <h3>Website Logo</h3>
+    <img src="" alt="Logo image" />
+    <hr>
+
+    <h2>Style Guide</h2>
+
+    <h3>Color Palette</h3>
+    <p>Palette URL:</p>
+    <a href="https://coolors.co/a2aebb-dfe0e2-006992-27476e-f1e3b2"
+      target="_blank">https://coolors.co/a2aebb-dfe0e2-006992-27476e-f1e3b2</a>
+
+    <table class="colors">
+      <tr>
+        <th>Primary</th>
+        <th>Secondary</th>
+        <th>Accent 1</th>
+        <th>Accent 2</th>
+      </tr>
+      <tr>
+        <td class="primary">#27476E</td>
+        <td class="secondary">#A2AEBB</td>
+        <td class="accent1">#F1E3B2</td>
+        <td class="accent2">#DFE0E2</td>
+      </tr>
+    </table>
+
+    <h3>Typography</h3>
+
+    <h4>
+      Heading Font: Rock Salt
+    </h4>
+    <h4>
+      Paragraph Font: Handlee
+    </h4>
+    <h3>Normal paragraph example</h3>
+    <p>
+      The best Whitewater Rafting in Colorado, White Water Rafting Company
+      offers rafting on the Colorado and Roaring Fork Rivers in Glenwood
+      Springs. Since 1974, we have been family owned and operated, rafting the
+      Shoshone section of Glenwood Canyon and beyond.
+    </p>
+    <h3>Colored paragraph example</h3>
+    <p class="colored">
+      Trips vary from mild and great for families, to trips exclusively for
+      physically fit and experienced rafters. No matter what type of river
+      adventures you are seeking, White Water Rafting Company can make it
+      happen for you.
+    </p>
+
+    <h3>Navigation</h3>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Map</a>
+      <a href="#">Parking</a>
+    </nav>
+    <hr />
+    <h2>Site Map</h2>
+    <div class="sitemap">
+      <div class="sm-home">Home</div>
+      <div class="sm-page2">Map</div>
+      <div class="sm-page3">Parking</div>
+
+      <div class="top">&nbsp;</div>
+      <div class="left">&nbsp;</div>
+      <div class="right">&nbsp;</div>
+    </div>
+    <hr />
+    <h2>Wireframes</h2>
+
+    <h3>Home</h3>
+
+    <img src="images/mainPage.png" alt="home page wireframe" />
+
+    <h3>Map</h3>
+
+    <img src="images/mapPage.png" alt="map page wireframe" />
+
+    <h3>Parking</h3>
+
+    <img src="images/parkingPage.png" alt="parking page wireframe" />
+
+    <!-- <img src="#" alt="page 2 wireframe"> -->
+  </main>
+</body>
+
+</html>
