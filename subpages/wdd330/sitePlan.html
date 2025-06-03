@@ -16,51 +16,71 @@
     <hr>
     <h2>Overview</h2>
     <h3>Purpose</h3>
-    <p>這個專案的目的是解決在都市中找停車位困難的問題，特別是台灣的大城市如台北和高雄。許多駕駛人浪費大量時間在找車位上，這不僅增加交通壅塞，也造成碳排放增加。我的動機是自己開車時經常遇到這個問題，希望透過這個應用程式，幫助使用者快速找到附近有空位的停車場，提升生活便利性與效率。</p>
+    <p>The main purpose of this project is to help us find the parking place more quickly.</p>
+    <!-- <p>這個專案的目的是解決在都市中找停車位困難的問題。許多駕駛人花大量時間在找車位上，這不僅增加交通壅塞還非常浪費時間。我自己開車時也經常遇到這個問題，希望透過這個應用程式，幫助使用者快速找到附近有空位的停車場，提升生活便利性與效率。</p> -->
 
     <h3>Target Audience</h3>
-    <p>
-      駕駛族群，特別是常在都市內開車的人
-      台灣主要城市（如台北市、高雄市）的居民或訪客
-      需要臨時找停車場的外地旅客
-      外送員、物流人員等需要快速停車的工作者
-    </p>
+    <p>Car driver, especially with those who driving in city.</p>
+    <!-- <p>駕駛族群，特別是常在都市內開車的人都會有機會使用。</p> -->
 
     <h3>Major Functions</h3>
     <p>
-      即時位置定位：使用者開啟應用後自動取得目前所在位置，作為搜尋停車場的中心點。
-      搜尋附近停車場：根據使用者位置或輸入地址，列出周圍的停車場資訊。
-      顯示剩餘車位數量：即時顯示每個停車場的可用車位（如小客車、大客車、機車）。
-      地圖標示與導航：整合地圖服務，在地圖上顯示停車場位置，並提供導航連結至 Google Maps 或 Apple Maps。
-      篩選功能：使用者可依類型（室內/室外）、價格、車種（機車/汽車）等條件進行篩選。
-      詳細資訊頁面：顯示停車場地址、開放時間、費率資訊、車位類型、是否可預約等。
-      收藏功能：允許使用者將常用的停車場加入收藏列表，方便快速查找。
-      更新時間提示：顯示資料的最後更新時間，讓使用者知道資料的即時性與可靠度。
+      <b>1.Realtime Position:</b> Get position automatically, and take it as center for parking place searching. <br>
+      <b>2.Nearby Parking Place Search:</b> Listing information of nearby parking place according user position or enter position.<br>
+      <b>3.Remain Parking Number:</b> Display the remain parking number of the parking place.<br>
+      <b>4.Map Display and Navigate:</b> Combine map service. Display the parking place on the map, and provide navigate link to Google Maps or Apple Maps. <br>
+      <b>5.Filter:</b> Filter with price or car type...etc. <br>
+      <b>6.Detail Page:</b> Display location, price, remain parking...etc, of the parking place
+      <b>7.Collect:</b> Allow user Collect Parking Place.
+      <b>8.Last Modified:</b> Display last modified. Let user know the immediacy, reliability data.
     </p>
+    <!-- <p>
+      1.即時位置定位：自動取得目前所在位置，作為搜尋停車場的中心點。<br>
+      2.搜尋附近停車場：根據使用者位置或輸入地址，列出周圍的停車場資訊。<br>
+      3.剩餘車位數量：顯示停車場的可用車位。<br>
+      4.地圖標示與導航：整合地圖服務，在地圖上顯示停車場位置，並提供導航連結至 Google Maps 或 Apple Maps。<br>
+      5.篩選：可依價格、車種等條件進行篩選。<br>
+      6.詳細資訊頁面：顯示停車場地址、費率資訊、車位類型等。<br>
+      7.收藏功能：允許將常用的停車場加入收藏列表，方便快速查找。<br>
+      8.更新時間提示：顯示資料的最後更新時間，可以知道資料的即時性與可靠度。
+    </p> -->
 
     <h3>External Data</h3>
-    <a><p>https://data.taipei</p></a>
-    <a href=""><p>https://data.kcg.gov.tw/</p></a>
     <p>
-      使用的 API 與資料包括：
-
+      <b>Taipei city Realtime Parking Data</b> <br>
+      <b>Source:</b> <a href="https://data.taipei/">https://data.taipei/</a> <br>
+      <br>
+      <b>Gaoxiong City Parking API</b> <br>
+      <b>Source:</b> <a href="https://data.kcg.gov.tw/">https://data.kcg.gov.tw/</a> <br>
+    </p>
+    <!-- <p>
       台北市即時停車資訊（開放資料）
-      　來源：資料台北（https://data.taipei/）
+      　來源：資料台北(<a href="https://data.taipei/">https://data.taipei/</a>)
       　用途：查詢即時剩餘車位數、停車場地點與基本資訊。
       高雄市智慧停車 API
-      　來源：高雄市政府資料開放平台（https://data.kcg.gov.tw/）
+      　來源：高雄市政府資料開放平台(<a href="https://data.kcg.gov.tw/">https://data.kcg.gov.tw/</a>)
       　用途：提供高雄市停車場即時車位與詳細資訊。
+      
       未來如擴充可加入：
-
       Google Maps API：地圖與導航功能（不計入兩個主要 API 之內）
-      需儲存的資料：
 
+      需儲存的資料：
       使用者收藏清單（本地儲存即可）
-      最近搜尋紀錄（可選擇性儲存）
-    </p>
+      最長使用清單（本地儲存即可）
+    </p> -->
 
     <h3>Module List</h3>
     <p>
+      <b>Map Display:</b> Link Map API. Display parking place position. <br>
+      <b>Search:</b> Search parking place with nearby or specificlly location <br> 
+      <b>API Handling</b> <br>
+      <b>List and Detail Page</b> <br>
+      <b>Filter</b> <br>
+      <b>Collect Manager:</b> Add or delete Parking Place in list. <br>
+      <b>Navigation link</b> <br>
+      <b>Status Display:</b> Display modified time and error message. 
+    </p>
+    <!-- <p>
       地圖顯示模組：整合地圖 API，顯示停車場位置。
       搜尋模組：搜尋附近或特定地址的停車場。
       API 資料處理模組：接收並整理台北/高雄開放資料。
@@ -69,14 +89,19 @@
       收藏管理模組：增刪使用者收藏的停車場。
       導航連結模組：整合第三方導航（如 Google Maps）。
       狀態顯示模組：顯示資料更新時間與錯誤訊息。
-    </p>
+    </p> -->
 
     <h3>Timeline</h3>
     <p>
+      <b>Week5:</b>	Complete wireframes, API link testing, and finish design style. <br>
+      <b>Week6:</b>	Complete development of core features (search, map, list, detail page) and Interface design.<br>
+      <b>Week7:</b>	Complete features such as favorites, navigation, and filtering. testing and debugging. submit the project.
+    </p>
+    <!-- <p>
       Week 5	完成畫面 Wireframes、API 串接測試、確定設計風格
       Week 6	完成主要功能開發（搜尋、地圖、列表、詳細頁）、介面初步設計完成
       Week 7	完成收藏、導航、篩選等功能、進行測試與除錯、提交最終作品
-    </p>
+    </p> -->
 
     <hr>
     <h2>Branding</h2>
